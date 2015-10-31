@@ -1,7 +1,7 @@
 ﻿{
 	"items":[
-		{"label": "ActionScript", "slug": "", "url": "/content/data/actionscript.md"},
-		{"label": "Arduino", "slug": "", "url": "https://raw.githubusercontent.com/emitter-io/web/master/README.md"},
+		{"label": "ActionScript", "slug": "", "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/actionscript.md"},
+		{"label": "Arduino", "slug": "", "api": "huh"},
 		{"label": "Bash", "slug": "", "api": "huh"},
 		{"label": "C", "slug": "", "api": "huh"},
 		{"label": "C ++", "slug": "", "api": "huh"},
