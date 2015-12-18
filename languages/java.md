@@ -11,7 +11,8 @@ All three APIs (blocking, future, and callback) share the same connection setup.
 
 ```java
 // Get an implementation of a blocking connection
-final BlockingConnection connection = Emitter.getDefault().blockingConnection();
+final BlockingConnection connection
+    = Emitter.getDefault().blockingConnection();
 try {
 	// Connect to emitter service
 	connection.connect();
@@ -20,7 +21,7 @@ try {
 	connection.subscribe(new Topic(key, "hello"));
 	
 	// Publish a message
-	connection.publish(key, "hello", "hello, emitter!".getBytes());
+	connection.publish(key, "hello", "hello!".getBytes());
 	
 	// Receive 10 messages
 	for(int i=0; i < 10; ++i){
@@ -44,7 +45,8 @@ try {
 The asynchronous API is using [futures & promises](https://en.wikipedia.org/wiki/Futures_and_promises) pattern to orchestrate the method calls. The usage is similar to the previous example and is demonstrated below.
 
 ```java
-final FutureConnection connection = Emitter.getDefault().futureConnection();
+final FutureConnection connection 
+    = Emitter.getDefault().futureConnection();
     	
 // Connects asynchronously to the service
 connection.connect().then(new Callback<Void>(){
@@ -59,20 +61,20 @@ connection.connect().then(new Callback<Void>(){
     	connection.subscribe(t);
     	
     	// Publish a message asynchronously
-    	connection.publish(key, "hello", "hello, emitter!".getBytes());
+    	connection.publish(key, "hello", "hello!".getBytes());
     	
     	// Receives a message asynchronously
     	connection.receive().then(new Callback<Message>() {
-				// We've successfully received a message
-				public void onSuccess(Message msg) {
-					
-		    		// Print it out
-		    		System.out.println(msg.getPayloadBuffer());
-				}
+			// We've successfully received a message
+			public void onSuccess(Message msg) {
 				
-				// Occurs if a receive operation fails
-				public void onFailure(Throwable value) { }
-			});
+	    		// Print it out
+	    		System.out.println(msg.getPayloadBuffer());
+			}
+			
+			// Occurs if a receive operation fails
+			public void onFailure(Throwable value) { }
+		});
 	}
 
 	// Occurs if the connect operation fails
