@@ -1,11 +1,11 @@
 * Repository: [https://github.com/emitter-io/java](https://github.com/emitter-io/java)
 * Maintainer: [Misakai Ltd.](http://misakai.com)
 
-## Overview
+### Overview
 
 This repository provides an MQTT connectivity library for building Java-based emitter.io applications. The library uses core technolgy developed by [FuseSource Corp.](https://github.com/fusesource/mqtt-client) and is released under ASL 2.0 license. The library takes care of automatically reconnecting to your MQTT server and restoring your client session if any network failures occur. Applications can use a blocking API style, a futures based API, or a callback/continuations passing API style.
 
-## Using Synchronous (Blocking) API
+### Using Synchronous (Blocking) API
 
 All three APIs (blocking, future, and callback) share the same connection setup. In order to get started, you'll need to create a new instance of the `Emitter` class (or get a default one) and retrieve the desired API implementation. Below, the simple usage of the blocking API is demonstrated.
 
@@ -39,7 +39,7 @@ try {
 }
 ```
 
-## Using Asynchronous (Non-Blocking) API
+### Using Asynchronous (Non-Blocking) API
 
 The asynchronous API is using [futures & promises](https://en.wikipedia.org/wiki/Futures_and_promises) pattern to orchestrate the method calls. The usage is similar to the previous example and is demonstrated below.
 
