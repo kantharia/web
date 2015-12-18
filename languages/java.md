@@ -83,7 +83,7 @@ connection.connect().then(new Callback<Void>(){
 ```
 
 
-## Advanced API Features
+### Advanced API Features
 
 As mentioned earlier, the API is using the underlying MQTT client originally developed by folks at FuseSource. You can find more information about various API members and configuration options here: https://github.com/fusesource/mqtt-client
     
