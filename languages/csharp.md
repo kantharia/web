@@ -3,6 +3,8 @@
 
 ### Overview
 
+![](https://s3.amazonaws.com/cdn.misakai.com/www-emitter/blog/net_framework.png)
+
 Emitter is an MQTT client tailored for [emitter.io](http://emitter.io) service, allowing real-time publish subscribe. It supports full .Net Framework, .Net Micro Framework and WinRT platform.
 
 The current version supports several .Net Frameworks: 
