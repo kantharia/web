@@ -1,4 +1,5 @@
 * Repository: [https://github.com/emitter-io/csharp](https://github.com/emitter-io/csharp)
+* Nuget: [https://www.nuget.org/packages/emitter](https://www.nuget.org/packages/emitter)
 * Maintainer: [Misakai Ltd.](http://misakai.com)
 
 ### Overview
