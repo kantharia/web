@@ -4,7 +4,7 @@
 * Browser Minified: [http://cdn.emitter.io/js/emitter.min.js](http://cdn.emitter.io/js/emitter.min.js)
 
 ### Description
-This is the JavaScript library for the browser, built and maintained by emitter.io team. The underlying communication layer uses [MQTT.js](https://github.com/mqttjs/MQTT.js) and released under MIT license.
+This is the JavaScript library for the browser and NodeJS, built and maintained by emitter.io team. The underlying communication layer uses [MQTT.js](https://github.com/mqttjs/MQTT.js) and released under MIT license.
 
 [![NPM](https://nodei.co/npm/emitter-io.png)](https://nodei.co/npm/emitter-io/)
 
