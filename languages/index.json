@@ -1,34 +1,9 @@
 ﻿{
 	"items":[
-		{"label": "ActionScript", "slug": "", "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "Arduino", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "Bash", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "C", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "C ++", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "Clojure", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "Dart", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "Delphi", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "Erlang", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "Espduino", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "Elixir", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "Go", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "Haskell", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
 		{"label": "Java", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/java.md"},
 		{"label": "JavaScript", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/javascript.md"},
-		{"label": "LotusScript", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "Lua", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
 		{"label": ".NET / C#", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/csharp.md"},
-		{"label": "Netduino", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/netduino.md"},
-		{"label": "Objective-C", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "OCaml", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "Perl", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "PHP", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "Python", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "REXX", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "Ruby", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "Qt", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "Shell Script", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "Swift", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"},
-		{"label": "Tcl", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/coming-soon.md"}
+    {"label": "NodeJS", "slug": "", "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/javascript.md" },
+    {"label": "Netduino", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/netduino.md"}
 	]
 }
