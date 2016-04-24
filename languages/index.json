@@ -1,9 +1,9 @@
 ﻿{
 	"items":[
-		{"label": "Java", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/java.md"},
-		{"label": "JavaScript", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/javascript.md"},
-		{"label": ".NET / C#", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/csharp.md"},
-        {"label": "NodeJS", "slug": "", "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/nodejs.md" },
-        {"label": "Netduino", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/netduino.md"}
+		{"category": "Language", "label": "Java", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/java.md"},
+		{"category": "Language", "label": "JavaScript", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/javascript.md"},
+		{"category": "Language", "label": ".NET / C#", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/csharp.md"},
+        	{"category": "Platform", "label": "NodeJS", "slug": "", "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/nodejs.md" },
+        	{"category": "Platform", "label": "Netduino", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/netduino.md"}
 	]
 }
