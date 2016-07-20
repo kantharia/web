@@ -1,45 +1,52 @@
 ﻿[
-    {
-      "category": "Language Binding",
-      "label": "Java",
-      "slug": "java",
-      "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/java.md"
-    },
-    {
-      "category": "Language Binding",
-      "label": "JavaScript",
-      "slug": "javascript",
-      "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/javascript.md"
-    },
-    {
-      "category": "Language Binding",
-      "label": "TypeScript",
-      "slug": "typescript",
-      "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/typescript.md"
-    },
-    {
-      "category": "Language Binding",
-      "label": ".NET / C#",
-      "slug": "dotnet",
-      "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/csharp.md"
-    },
-    {
-      "category": "Platform Support",
-      "label": "NodeJS",
-      "slug": "nodejs",
-      "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/nodejs.md"
-    },
-    {
-      "category": "Platform Support",
-      "label": "Netduino",
-      "slug": "netduino",
-      "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/netduino.md"
-    },
-    {
-      "category": "Tutorial",
-      "label": "Collaborative Paint",
-      "slug": "collaborative-paint",
-      "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/paint.md",
-      "frame": "https://emitter.io/demo/paint/index.html"
-    }
+  {
+    "category": "Language Binding",
+    "label": "Java",
+    "slug": "java",
+    "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/java.md"
+  },
+  {
+    "category": "Language Binding",
+    "label": "JavaScript",
+    "slug": "javascript",
+    "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/javascript.md"
+  },
+  {
+    "category": "Language Binding",
+    "label": "TypeScript",
+    "slug": "typescript",
+    "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/typescript.md"
+  },
+  {
+    "category": "Language Binding",
+    "label": ".NET / C#",
+    "slug": "dotnet",
+    "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/csharp.md"
+  },
+  {
+    "category": "Platform Support",
+    "label": "NodeJS",
+    "slug": "nodejs",
+    "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/nodejs.md"
+  },
+  {
+    "category": "Platform Support",
+    "label": "Netduino",
+    "slug": "netduino",
+    "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/netduino.md"
+  },
+  {
+    "category": "Tutorial",
+    "label": "Collaborative Paint",
+    "slug": "collaborative-paint",
+    "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/paint.md",
+    "frame": "https://emitter.io/demo/paint/index.html"
+  },
+  {
+    "category": "Tutorial",
+    "label": "HTML5 Chat",
+    "slug": "html5-chat",
+    "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/chat.md",
+    "frame": "https://emitter.io/demo/chat/index.html"
+  }
 ]
