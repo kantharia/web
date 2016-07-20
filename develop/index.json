@@ -47,6 +47,6 @@
     "label": "HTML5 Chat",
     "slug": "html5-chat",
     "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/chat.md",
-    "frame": "https://emitter.io/demo/chat/index.html"
+    "frame": "https://emitter.io/demo/chat/index-embed.html"
   }
 ]
