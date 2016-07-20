@@ -3,42 +3,42 @@
       "category": "Language",
       "label": "Java",
       "slug": "java",
-      "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/java.md"
+      "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/java.md"
     },
     {
       "category": "Language",
       "label": "JavaScript",
       "slug": "javascript",
-      "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/javascript.md"
+      "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/javascript.md"
     },
     {
       "category": "Language",
       "label": "TypeScript",
       "slug": "typescript",
-      "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/typescript.md"
+      "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/typescript.md"
     },
     {
       "category": "Language",
       "label": ".NET / C#",
       "slug": "dotnet",
-      "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/csharp.md"
+      "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/csharp.md"
     },
     {
       "category": "Platform",
       "label": "NodeJS",
       "slug": "nodejs",
-      "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/nodejs.md"
+      "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/nodejs.md"
     },
     {
       "category": "Platform",
       "label": "Netduino",
       "slug": "netduino",
-      "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/netduino.md"
+      "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/netduino.md"
     },
     {
       "category": "Tutorial",
       "label": "Collaborative Paint",
       "slug": "collaborative-paint",
-      "url": "https://raw.githubusercontent.com/emitter-io/web/master/languages/paint.md"
+      "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/paint.md"
     }
 ]
