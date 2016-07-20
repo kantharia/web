@@ -1,5 +1,5 @@
 {
 	"items":[
-		{"label": "Collaborative Paint", "slug": "",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/demo/paint.md"},
+		{"label": "Collaborative Paint", "slug": "paint",  "url": "https://raw.githubusercontent.com/emitter-io/web/master/demo/paint.md"},
 	]
 }
