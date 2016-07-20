@@ -40,13 +40,13 @@
     "label": "Collaborative Paint",
     "slug": "collaborative-paint",
     "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/paint.md",
-    "frame": "https://emitter.io/demo/paint/index.html"
+    "frame": "http://s3-eu-west-1.amazonaws.com/emitter.io/demo/paint/index.html"
   },
   {
     "category": "Tutorial",
     "label": "HTML5 Chat",
     "slug": "html5-chat",
     "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/chat.md",
-    "frame": "https://emitter.io/demo/chat/index-embed.html"
+    "frame": "http://s3-eu-west-1.amazonaws.com/emitter.io/demo/chat/index-embed.html"
   }
 ]
