@@ -40,6 +40,6 @@
       "label": "Collaborative Paint",
       "slug": "collaborative-paint",
       "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/paint.md",
-      "frame": "https://emitter.io/paint/index.html"
+      "frame": "https://emitter.io/demo/paint/index.html"
     }
 ]
