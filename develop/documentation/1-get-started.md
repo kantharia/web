@@ -39,7 +39,7 @@ connection.disconnect();
 ## Publishing Messages
 
 When publishing a message, the client needs to provide at least:
-* The channel key (see section key (link) for more details)
+* A channel key
 * A channel name
 
 Although it is not mandatory, a message usually also has a body. An example of publishing a message is given below.
@@ -65,24 +65,28 @@ There are 2 types of keys; the channel key and the secret key:
 emitter.keygen({
 	key: "<your secret key>",
 	channel: "chat",
-	type: "rw",
+	type: "rwls",
 	ttl: 600
 }); 
 ```
 
 When creating a channel key, you can define the following things:
-* Channel: The channel for which the channel key should be valid. For limitations and possibilities of channel names.
-* Type: The type of access. This can be read only (subscribe), write only (publish) or read and write (subscribe and publish). You are free to generate multiple keys for one channel with different access types.
-* Ttl: The time to live describes how long the channel key should be valid. The unit for this is seconds. When this time has passed the channel will still exist, but a new channel name needs to be generated to be able to publish or subscribe using this channel. A finite time to lives can be used to increase security. Ttl is optional, if you leave it empty the time to live is indefinitely. 
+* **Channel**: The channel for which the channel key should be valid. For limitations and possibilities of channel names.
+* **Type**: The type of access. You are free to generate multiple keys for one channel with different access types. This can take several values or any combination:
+    * `r` - requests a a key that can be used for reading (subscribing) from the channel.
+    * `w` - requests a a key that can be used for writing (publishing) to the channel.
+    * `l` - requests a a key that can be used for loading message history from the channel storage, if this flag is specified, `r` should also be set.
+    * `s` - requests a a key that can be used for storing messages in the channel storage, if this flag is specified, `w` should also be set.
+* **Ttl**: The time to live describes how long the channel key should be valid. The unit for this is seconds. When this time has passed the channel will still exist, but a new channel name needs to be generated to be able to publish or subscribe using this channel. A finite time to lives can be used to increase security. Ttl is optional, if you leave it empty the time to live is indefinitely. 
 
 ## Channel Structure
 
 Section publish explained that a channel is automatically created if you create a channel key. You can define names for channels yourself. Examples of channel names are:
-* `houseX/bedroom1/temperature`
-* `gameX/user5/zone3/x-coordinate`
+* `house/bedroom1/temperature`
+* `game1/user5/zone3/x-coordinate`
 
 A channel can consist of multiple levels with forward slashes between them. An advantage of using channels with multiple levels is that clients can use filtering and wildcards to subscribe to parts of the complete channel. Channel names are case sensitive. Emitter supports the following characters:
-*  Digits: `0-9`
+* Digits: `0-9`
 * Lowercase Characters: `a-z`
 * Uppercase Characters: `A-Z`
 * The following special characters `.`, `:`, `-`
@@ -109,7 +113,22 @@ A client can connect to a complete channel, or single- or multi-level filtering 
 
 ## Single-level Filtering 
 
-Suppose messages have been published to channel `houseX/firstfloor/bedroom1/temperature`. A client can receive all messages related to temperature at the first floor by subscribing to channel `houseX/firstfloor/+/temperature` or to receive temperature messages of any floor, it can subscribe to `houseX/+/+/temperature`. The ‘+’ serves as a wildcard and can be placed at any level of a channel name. There is no limitation in the number of wildcards used when subscribing.
+Suppose messages have been published to channel `house/firstfloor/bedroom1/temperature`. A client can receive all messages related to temperature at the first floor by subscribing to channel `house/firstfloor/+/temperature` or to receive temperature messages of any floor, it can subscribe to `house/+/+/temperature`. The `+` serves as a wildcard and can be placed at any level of a channel name. There is no limitation in the number of wildcards used when subscribing, but it can not be used to to replace the root channel (`house` in this case).
 
 ##  Multi-level Filtering
-Looking at the example where messages have been published to channel `houseX/firstfloor/bedroom1/temperature` again, suppose a client is interested in all messages for `houseX`. In that case the client can simply subscribe to channel `houseX/`. If the client wants to receive all messages of the first floor of `houseX`, it can subscribe to channel `houseX/firstfloor/`. So by specifying only the first part of a complete channel, Emitter assumes you want to subscribe to all sub channels too. Note that the last slash is not required, the behavior is the same with or without the slash.
+Looking at the example where messages have been published to channel `house/firstfloor/bedroom1/temperature` again, suppose a client is interested in all messages for `house`. In that case the client can simply subscribe to channel `house/`. If the client wants to receive all messages of the first floor of `house`, it can subscribe to channel `house/firstfloor/`. So by specifying only the first part of a complete channel, Emitter assumes you want to subscribe to all sub channels too. Note that the last slash is not required, the behavior is the same with or without the slash.
+
+
+## Unsubscribing from Channels
+
+Finally, it is also possible to unsubscribe from the channel. 
+
+```javascript
+// unsubscribe from the 'chat' channel
+emitter.unsubscribe({
+     key: "<channel key>",
+     channel: "chat"
+});
+```
+
+The format of the request is similar to the subscription one, you'll need to provide the key with subscription permissions to the target channel and the channel name.
