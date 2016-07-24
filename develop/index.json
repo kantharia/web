@@ -1,5 +1,11 @@
 ﻿[
   {
+    "category": "Guide",
+    "label": "Getting Started",
+    "slug": "getting-started",
+    "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/documentation/1-get-started.md"
+  },
+  {
     "category": "Language Binding",
     "label": "Java",
     "slug": "java",
@@ -48,11 +54,5 @@
     "slug": "html5-chat",
     "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/chat.md",
     "frame": "https://s3-eu-west-1.amazonaws.com/emitter.io/demo/chat/index-embed.html"
-  },
-  {
-    "category": "Guide",
-    "label": "Getting Started",
-    "slug": "getting-started",
-    "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/documentation/1-get-started.md"
   }
 ]
