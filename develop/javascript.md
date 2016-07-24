@@ -1,7 +1,7 @@
 * Repository: [https://github.com/emitter-io/javascript](https://github.com/emitter-io/javascript)
 * Maintainer: [Misakai Ltd.](http://misakai.com)
-* Browser Distribution: [http://cdn.emitter.io/js/emitter.js](http://cdn.emitter.io/js/emitter.js)
-* Browser Minified: [http://cdn.emitter.io/js/emitter.min.js](http://cdn.emitter.io/js/emitter.min.js)
+* Browser Distribution: https://s3-eu-west-1.amazonaws.com/cdn.emitter.io/js/emitter.js
+* Browser Minified: https://s3-eu-west-1.amazonaws.com/cdn.emitter.io/js/emitter.min.js
 
 ### Description
 This is the JavaScript library for the browser and NodeJS, built and maintained by emitter.io team. The underlying communication layer uses [MQTT.js](https://github.com/mqttjs/MQTT.js) and released under MIT license.
