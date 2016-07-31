@@ -60,7 +60,7 @@ emitter.publish({
 In that case the previously defined subscribe statements are all still valid. In the below example the temperature of all temperature sensors of bedroom 1 on the first floor will be received.  
 
 ```javascript
-mitter.subscribe({
+emitter.subscribe({
   key: "<channel key>",
   channel: "house/firstfloor/bedroom1/temperature"
 });
