@@ -8,11 +8,12 @@ Including the fact that Emitter was designed for low latency, this combination o
 
 In the remainder of this documentation we will mainly focus on what developers need to know to work with Emitter. This means the main focus is on the client side and not on the broker side. The four main operations a client can do are:
 
-* **Connect** to Emitter broker
-* **Disconnect** from Emitter broker
-* **Publish** messages
-* **Subscribe** to channels to receive messages.
+* **Connect** to Emitter broker.
+* **Disconnect** from Emitter broker.
+* **Publish** messages and optionally store published messages.
+* **Subscribe** to channels to receive messages and optionally retrieve stored messages.
 * **Unsubscribe** from channels to stop receiving messages.
+* **Keygen** to generate keys with appropriate permissions.
 
 Developers who are familiar with message queueing systems might think we forgot about ‘creating a topic/channel’ but with Emitter it is not necessary to explicitly do that, you can just start publishing to a channel.
 
@@ -42,20 +43,21 @@ When publishing a message, the client needs to provide at least:
 * A channel key
 * A channel name
 
-Although it is not mandatory, a message usually also has a body. An example of publishing a message is given below.
+Although it is not mandatory, a message usually also has a body. Finally, you can define how long a message needs to be stored (in seconds). If you omit this part, the message will not be stored. An example of publishing a message is given below.
 
 ```javascript
 // publish a message to the chat channel
 emitter.publish({
     key: "<channel key>",
     channel: "chat/my_name",
+    ttl: 1200,
     message: "hello, emitter!"
 });
 ```
 
 Note that you do not explicitly create a channel before starting to publish. A channel is automatically created upon generating a channel key.
 
-## Securing the Channels
+## Channel Security And Authorization
 
 There are 2 types of keys; the channel key and the secret key:
 * **Secret key**: This key is provided to you on the emitter.io website in your personal [console](/login). The secret key can be used to generate channel keys. This can be done in the personal console, or via an API call (see code below). You can at any time request a new secret key from emitter.
@@ -85,7 +87,7 @@ Section publish explained that a channel is automatically created if you create 
 * `house/bedroom1/temperature`
 * `game1/user5/zone3/x-coordinate`
 
-A channel can consist of multiple levels with forward slashes between them. An advantage of using channels with multiple levels is that clients can use filtering and wildcards to subscribe to parts of the complete channel. Channel names are case sensitive. Emitter supports the following characters:
+A channel can consist of multiple levels with forward slashes between them. An advantage of using channels with multiple levels is that clients can use [filtering and wildcards to subscribe to parts of the complete channel](/develop/message-filtering). Channel names are case sensitive. Emitter supports the following characters:
 * Digits: `0-9`
 * Lowercase Characters: `a-z`
 * Uppercase Characters: `A-Z`
@@ -104,20 +106,13 @@ When subscribing to a channel, the client needs to provide the key and the chann
 emitter.on('connect', function(){
     emitter.subscribe({
         key: "<channel key>",
-        channel: "chat"
+        channel: "chat",
+        last: 5
     });
 });
 ```
 
-A client can connect to a complete channel, or single- or multi-level filtering can be used.
-
-## Single-level Filtering 
-
-Suppose messages have been published to channel `house/firstfloor/bedroom1/temperature`. A client can receive all messages related to temperature at the first floor by subscribing to channel `house/firstfloor/+/temperature` or to receive temperature messages of any floor, it can subscribe to `house/+/+/temperature`. The `+` serves as a wildcard and can be placed at any level of a channel name. There is no limitation in the number of wildcards used when subscribing, but it can not be used to to replace the root channel (`house` in this case).
-
-##  Multi-level Filtering
-Looking at the example where messages have been published to channel `house/firstfloor/bedroom1/temperature` again, suppose a client is interested in all messages for `house`. In that case the client can simply subscribe to channel `house/`. If the client wants to receive all messages of the first floor of `house`, it can subscribe to channel `house/firstfloor/`. So by specifying only the first part of a complete channel, Emitter assumes you want to subscribe to all sub channels too. Note that the last slash is not required, the behavior is the same with or without the slash.
-
+A client can connect to a complete channel, or single- or multi-level filtering can be used. The `last` argument is optional. It defines how many messages are retrieved from storage at the moment of connecting. If the argument is omitted, no messages are retrieved from history. This will only work if the channel key authorizations are defined to give access for retrieving from history. When retrieving from history, the last created messages are retrieved, they are retrieved in the same sequence at which they were stored.
 
 ## Unsubscribing from Channels
 
