@@ -13,7 +13,7 @@ In the remainder of this documentation we will mainly focus on what developers n
 * **Publish** messages and optionally store published messages.
 * **Subscribe** to channels to receive messages and optionally retrieve stored messages.
 * **Unsubscribe** from channels to stop receiving messages.
-* **Keygen** to generate keys with appropriate permissions.
+* **Generate Keys** with appropriate security permissions.
 
 Developers who are familiar with message queueing systems might think we forgot about ‘creating a topic/channel’ but with Emitter it is not necessary to explicitly do that, you can just start publishing to a channel.
 
