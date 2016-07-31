@@ -6,6 +6,12 @@
     "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/documentation/1-get-started.md"
   },
   {
+    "category": "Guide",
+    "label": "Message Filtering",
+    "slug": "message-filtering",
+    "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/documentation/2-filtering.md"
+  },
+  {
     "category": "Language Binding",
     "label": "Java",
     "slug": "java",
