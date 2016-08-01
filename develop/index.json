@@ -12,6 +12,12 @@
     "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/documentation/2-filtering.md"
   },
   {
+    "category": "Guide",
+    "label": "Message Storage",
+    "slug": "message-storage",
+    "url": "https://raw.githubusercontent.com/emitter-io/web/master/develop/documentation/3-storage.md"
+  },
+  {
     "category": "Language Binding",
     "label": "Java",
     "slug": "java",
