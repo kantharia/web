@@ -14,4 +14,4 @@ Netduino uses .Net Micro Framework and our C# library currently supports .Net Mi
 
 ### Usage & Documentation
 
-More information can be found on the [.NET / C# download page](/download/net-c).
+More information can be found on the [.NET / C# download page](/develop/net-c).
