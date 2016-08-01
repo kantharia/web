@@ -75,10 +75,10 @@ emitter.keygen({
 When creating a channel key, you can define the following things:
 * **Channel**: The channel for which the channel key should be valid. For limitations and possibilities of channel names.
 * **Type**: The type of access. You are free to generate multiple keys for one channel with different access types. This can take several values or any combination:
-    * `r` - requests a a key that can be used for reading (subscribing) from the channel.
-    * `w` - requests a a key that can be used for writing (publishing) to the channel.
-    * `l` - requests a a key that can be used for loading message history from the channel storage, if this flag is specified, `r` should also be set.
-    * `s` - requests a a key that can be used for storing messages in the channel storage, if this flag is specified, `w` should also be set.
+    * `r` - requests a key that can be used for reading (subscribing) from the channel.
+    * `w` - requests a key that can be used for writing (publishing) to the channel.
+    * `l` - requests a key that can be used for loading message history from the channel storage, if this flag is specified, `r` should also be set.
+    * `s` - requests a key that can be used for storing messages in the channel storage, if this flag is specified, `w` should also be set.
 * **Ttl**: The time to live describes how long the channel key should be valid. The unit for this is seconds. When this time has passed the channel will still exist, but a new channel name needs to be generated to be able to publish or subscribe using this channel. A finite time to lives can be used to increase security. Ttl is optional, if you leave it empty the time to live is indefinitely. 
 
 ## Channel Structure
